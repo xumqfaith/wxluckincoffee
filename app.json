@@ -1,12 +1,14 @@
 {
   "pages":[
-    
-    "pages/car/car",
     "pages/menu/menu",
+    "pages/outside/outside",
+    "pages/car/car",
+    
     "pages/me/me",
     "pages/home/home",
     "pages/order/order",
     "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

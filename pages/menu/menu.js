@@ -208,6 +208,9 @@ Page({
     let that = this
     let floatindex = that.data.floatindex
     if (floatindex == true) {
+      wx.navigateTo({
+        url: '../outside/outside'
+      })
       that.setData({
         floatindex: false,
         floatdata: "right",
@@ -216,6 +219,7 @@ Page({
       })
     }
     if (floatindex == false) {
+      console.log(1)
       that.setData({
         floatindex: true,
         floatdata: "left",

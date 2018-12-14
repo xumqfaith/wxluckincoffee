@@ -2,6 +2,10 @@
   <map
     longitude="{{ longitude }}"
     latitude="{{ latitude }}"
+    enable-3D="true"
+    show-compass="true" 
+    enable-overlooking="true"
+    enable-rotate="true"
     show-location
     style="width: 100%; height: 1000rpx;"
   ></map>

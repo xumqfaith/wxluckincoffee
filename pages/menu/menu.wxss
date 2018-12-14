@@ -1,0 +1,163 @@
+.choose{
+  width: 96%;
+  margin:0 20rpx;
+  height: 100rpx;
+}
+.choose::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.float_l{
+  width: 220rpx;
+  height: 100rpx;
+  float: left;
+  line-height: 100rpx;
+}
+.float_l image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.float_l .msg{
+  float: right;
+  margin-top: 10rpx;
+}
+.float_l .name{
+  font-size: 32rpx;
+  line-height: 40rpx;
+}
+.float_l .distance{
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 40rpx;
+}
+.banner{
+width: 100%;
+height: 240rpx;
+margin-top: 20rpx;
+}
+.box{
+  width: 160rpx;
+  height:36px;
+  float: right;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+  line-height: 70rpx;
+  border:1rpx solid #7ca7d2;
+  }
+.boxchecked{
+  width: 35px;
+  height: 32px;
+  line-height: 30px;
+  background: #7ca7d2;
+  border-radius: 45%;
+  margin:2px;
+  float: left;
+  text-align: center;
+  color: #ffffff;
+  }
+.boxtext{
+  width: 70rpx;
+  float: right;
+  text-align: center;
+  color: #7ca7d2;
+}
+.shell{
+  width: 100%;
+  height:740rpx;
+  background: #f7f7f7;
+}
+.menu{
+  width: 25%;
+  float: left;
+  color: #9e9e9e;
+}
+.list{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+.active{
+  background:#ffffff;
+  color: #232323;
+}
+.details{
+width: 74%;
+float: right;
+padding-left: 1%;
+font-size: 24rpx;
+background: #ffffff;
+}
+.details  .title{
+  padding-top: 10rpx;
+  color:  #232323;
+}
+.details .comment::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.details .comment{
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.details .comment .text{
+  color: #9e9e9e;
+  font-size: 20rpx;
+  padding-bottom: 10rpx;
+  position: absolute;
+  top: -14rpx;
+  background: white;
+  padding-right:10rpx;
+}
+.details .comment .line{
+  height: 1rpx;
+  margin-top: 12rpx;
+  width: 100%;
+  background: #f2f3ee;
+}
+.details .single{
+  margin-bottom: 30rpx;
+}
+.details .single::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.details .pic{
+  width: 120rpx;
+  height: 120rpx;
+  background: lightgoldenrodyellow;
+  float: left;
+}
+.details .choose{
+ float: left;
+ width: 280rpx;
+}
+.details .choose .chinesename{
+font-weight: bold;
+}
+.details .choose .englishname{
+  color: #9e9e9e;
+  font-size: 20rpx;
+}
+.details .choose .material{
+  color: #9e9e9e;
+  font-size: 20rpx;
+}
+.details .choose .money{
+ font-weight: bold;
+}
+.details .add{
+ float: right;
+ margin-right: 40rpx;
+ margin-top: 60rpx;
+ width: 30rpx;
+ height: 30rpx;
+ background: #8aadd3;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 30rpx;
+ color: #ffffff;
+}

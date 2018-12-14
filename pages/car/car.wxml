@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{ nothing }}" class='nothing'>
+    <image src='./img/null.jpg'></image>
+    <text>您的购物车有点寂寞</text>
+    <button bindtap='go'>去喝一杯</button>
+  </view>
+  <view wx:else class='box'>
+      <view wx:for="{{ charlist }}" 
+       data-move="{{ item.isTouchMove }}"
+       bindtouchstart="touchstart" 
+       bindtouchmove="touchmove" 
+       data-index="{{ index }}"
+       class="wrap {{ item.isTouchMove ? 'touch-move-active' : ''}}" wx:key="{{ index }}">
+      <view class='content' >
+        <view class='check' data-index="{{ index }}"  data-num="{{ item.num }}" data-checked="{{ item.checked }}" bindtap='checked' ><image wx:if="{{ item.checked }}" src='./img/checked.png'></image><image wx:else  src='./img/checkbox.png'></image></view>
+        <view class='detail'>
+          <view class='name'>{{ item.chinesename }}<text class='mark'>充2赠1，充5赠5</text></view>
+          <view class='sub'>大/单糖/热</view>
+          <view class='name price'>￥{{ item.price }}</view>
+          <view class='several'>
+             <text class='limit'>仅限打包带走</text><text class='subtract' data-index="{{ index }}"  data-num="{{ item.num }}" bindtap='sub'>-</text><text  class='num' >{{ item.num }}</text><text class='add' bindtap='add' data-index="{{ index }}"  data-num="{{ item.num }}">+</text>
+          </view>
+        </view>
+        </view>
+         <view class='delete' bindtap='delete' data-index="{{ index }}">删除</view>
+      </view>
+      <view class='bottom'>
+        <view class='money'>应付合计<text class='num'>￥{{ money }}</text></view>
+        <view class='accounts' bindtap='accounts'>去结算</view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--home.wxml-->
+<view class="container">
+  <view class="slide">
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style='width:100%;height:280px;'/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+  <view class="list" bindtap='now'>
+    <view class="classify">现在下单</view>
+    <view>ORDER NOW</view>
+    <image src='./img/1.jpg'></image>
+  </view>
+  <view class="list">
+    <view class="classify">咖啡钱包 <text class="userinfo-nickname">充2赠1，充5赠5</text></view>
+    <view>COFFEE WALLET</view>
+    <image src='./img/2.jpg'></image>
+  </view>
+  <view class="list">
+    <view class="classify">邀请得杯</view>
+    <view>SHARE & GET IT FREE</view>
+    <image src='./img/3.jpg'></image>
+  </view>
+</view>

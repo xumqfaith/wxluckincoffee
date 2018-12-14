@@ -1,0 +1,126 @@
+<view class='container'>
+    <view class='choose'>
+      <view class='float_l'>
+        <image src='./img/address.jpg'></image>
+        <view class='msg'>
+          <view class='name'>港泰广场店</view>
+          <view class='distance'>距您171m</view></view>
+      </view>
+      <view class='box'>
+        <view class='boxchecked' bindtap='changebtn' style='float:{{floatdata}}'>{{ selfservice }}</view>
+        <view class='boxtext' bindtap='changebtn' style='float:{{!floatdata}}'>{{ transport }}</view>
+      </view>
+    </view>
+    <image class='banner' src='./img/zhang.jpg'></image> 
+    <view class='shell'>
+      <view class='menu'>
+        <scroll-view scroll-y style='height:370px;' scroll-into-view="{{ num }}">
+            <view  wx:for="{{lists}}" wx:key="{{ index }}" >
+                <view class="list {{ num == item.id  ? 'active':''}}" bindtap='click' id="{{ item.id }}" data-current="{{ item.id }}">
+                  {{item.name}}
+                </view>
+            </view>
+          </scroll-view>
+      </view>
+      <view class='details'>
+      <scroll-view scroll-y style='height:370px;' scroll-into-view="{{toView}}" bindscroll="scroll" >
+            <view class='master' id="data0">
+                <view class='title'>大师咖啡</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ masterlist }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}"  data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+            <view class='master' id="data1">
+                <view class='title'>零度拿铁</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ zerolatte }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}" data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+            <view class='master' id="data2">
+                <view class='title'>瑞纳冰</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ ice }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}" data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+            <view class='master' id="data3">
+                <view class='title'>经典饮品</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ classic }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}" data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+            <view class='master' id="data4">
+                <view class='title'>健康轻食</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ health }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}" data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+            <view class='master' id="data5">
+                <view class='title'>鲜榨果蔬汁</view>
+                <view class='comment'><view class='text'>WBC(世界咖啡大师)冠军团队拼配</view><view class='line'></view></view>
+                <view  wx:for="{{ juice }}" wx:key="{{ index }}" >
+                        <view class='single'>
+                          <view class='pic'></view>
+                          <view class='choose'>
+                            <view class='chinesename'>{{ item.chinesename }}</view>
+                            <view class='englishname'>{{ item.englishname }}</view>
+                            <view class='material'>默认：大/无糖/无奶/热</view>
+                            <view class='money'>￥{{ item.price }}</view>
+                          </view>
+                          <view class='add' bindtap='add' data-id="{{ item.id }}" data-price="{{ item.price }}">+</view>
+                        </view>
+                </view>
+            </view>
+      </scroll-view>
+      </view>
+     </view>
+</view>

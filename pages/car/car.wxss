@@ -1,0 +1,163 @@
+.container{
+    background: #fbfbfb;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nothing{
+  margin-top: 260rpx;
+
+}
+.nothing image{
+  width: 160rpx;
+  height:120rpx;
+  display: block;
+  margin: 0 auto;
+}
+.nothing text{
+  font-size: 32rpx;
+  line-height: 100rpx;
+}
+.nothing button{
+  margin-top: 20rpx;
+  color: #7ca7d2;
+  border:1rpx solid #7ca7d2; 
+}
+.box{
+  width: 100%;
+  padding-bottom: 200rpx;
+}
+
+.check{
+  text-align: center;
+  flex: 0 0 80rpx;
+  line-height: 80rpx;
+}
+.check image{
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle；
+}
+.detail{
+  flex: 1;
+}
+.name{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.name .mark{
+  font-size: 20rpx;
+  color: white;
+  background:#e06e11;
+  padding:0 8rpx;
+  margin-left: 4rpx;
+}
+.sub{
+  font-size: 24rpx;
+}
+.price{
+  width: 100rpx;
+  float: left;
+}
+.several{
+  float: right;
+  margin-right: 40rpx;
+  margin-bottom: 10rpx;
+}
+.several>text{
+  display: inline-block;
+}
+.subtract{
+  color:  #7ca7d2;
+}
+.subtract,.add{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #7ca7d2;
+  text-align: center;
+  line-height: 15px;
+}
+.add{
+  color: white;
+  background: #7ca7d2;
+}
+.limit{
+  font-size: 24rpx;
+  color: #7ca7d2;
+  padding-right: 20rpx;
+  line-height: 17px;
+}
+.num{
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  line-height: 17px;
+}
+.box .bottom{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  background: #ffffff;
+  box-shadow: 0 -1px 1px #dacfcf;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  float: left
+}
+.money{
+  width: 70%;
+  height: 100%;
+  float: left;
+  text-indent: 10rpx;
+}
+.accounts{
+  width: 30%;
+  height: 100%;
+  float: left;
+  background: #7ca7d2;
+  text-align: center;
+  color: #ffffff;
+}
+.money .num{
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.wrap{
+  display:flex;
+  justify-content:space-between;
+  border-bottom: 1rpx solid #d5dde6;
+}
+.content{
+  display: flex;
+  height: 120rpx;
+  padding: 20rpx 0;
+  justify-content:space-between;
+  width: 100%;
+  margin-left: -200rpx;
+  -webkit-transition:all 0.4s;
+  transition:all 0.4s;
+  -webkit-transform:translateX(200rpx);
+  transform:translateX(200rpx);
+  margin-right:0;
+}
+.delete{
+ padding: 20rpx 0;
+ background-color: orangered;
+ float: right;
+ width: 200rpx;
+ height: 120rpx;
+ line-height: 120rpx;
+ text-align: center;
+ color: #fff;
+ -webkit-transform: translateX(200rpx);
+ transform: translateX(200rpx);
+ -webkit-transition: ease-out 0.4s;
+ transition: ease-out 0.4s;
+}
+.touch-move-active .content,
+.touch-move-active .delete {
+ -webkit-transform: translateX(0);
+ transform: translateX(0);
+}

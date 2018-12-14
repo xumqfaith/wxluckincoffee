@@ -1,0 +1,50 @@
+<view class='container'>
+  <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap"  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <image class='arrows' src='./img/arrows.jpg'></image>
+      </block>
+  </view>
+  <view class='list'>
+    <image class="logo" src='./img/address.jpg' background-size="cover"></image>
+    <text>收获地址</text>
+    <view class='arrow_r'>
+      <image class='arrows' src='./img/arrows.jpg'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <image class="logo" src='./img/tea.jpg' background-size="cover"></image>
+    <text>咖啡钱包</text>
+    <view class='arrow_r'>
+      <text>0杯</text>
+      <image class='arrows' src='./img/arrows.jpg'></image>
+    </view>
+  </view>
+  <view class='list' >
+    <image class="logo" src='./img/money.jpg' background-size="cover"></image>
+    <text>优惠券</text>
+    <view class='arrow_r'>
+      <text>2张</text>
+    <image class='arrows' src='./img/arrows.jpg'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <image class="logo" src='./img/date.jpg' background-size="cover"></image>
+    <text>发票管理</text>
+    <view class='arrow_r'>
+      <image class='arrows' src='./img/arrows.jpg'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <image class="logo" src='./img/tel.jpg' background-size="cover"></image>
+    <text>客户服务</text>
+    <view class='arrow_r'>
+      <image class='arrows' src='./img/arrows.jpg'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <image class='share' src='./img/sharewei.jpg'></image>
+  </view>
+</view>

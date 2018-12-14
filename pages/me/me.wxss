@@ -1,0 +1,60 @@
+.container{
+  margin: 0 40rpx;
+}
+.userinfo{
+  width: 100%;
+  height: 200rpx;
+}
+.userinfo .arrows{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  float: right;
+  margin-top: 40rpx;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.list{
+  width: 100%;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.logo{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.list>text{
+  font-size:28rpx;
+  margin-left:20rpx;
+}
+.list .share{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 200rpx;
+}
+.list .arrow_r{
+  float:right;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: right;
+}
+.list .arrow_r text{
+  text-align: right;
+  font-size: 28rpx;
+  color: #999999;
+}
+.list .arrows{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
